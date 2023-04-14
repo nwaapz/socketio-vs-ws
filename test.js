@@ -1,6 +1,7 @@
 const port = 8080;
 const io = require('socket.io')();
 io.use((socket, next) => {
+    console.log("using socket");
     if (socket.handshake.query.token === "UNITY") {
         next();
     } else {
@@ -9,6 +10,7 @@ io.use((socket, next) => {
 });
 
 io.on('connection', socket => {
+    console.log("connection open");
   socket.emit('connection', {date: new Date().getTime(), data: "Hello Unity"})
 
   socket.on('hello', (data) => {
