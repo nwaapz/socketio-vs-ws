@@ -1,0 +1,22 @@
+{
+  "name": "ws-vs-socketio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwaapz/socketio-vs-ws.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nwaapz/socketio-vs-ws/issues"
+  },
+  "homepage": "https://github.com/nwaapz/socketio-vs-ws#readme",
+  "dependencies": {
+    "socket.io": "^4.6.1"
+  }
+}
